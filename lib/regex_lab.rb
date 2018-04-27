@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  if word =~ (/^[aeiou]/i)
+  if word =~ /^[aeiou]/i
     return true
   else
     return false
@@ -16,6 +16,10 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text =~ /^[A-Z]$\W/
+    return true
+  else
+    return false
+  end
 end
 
 def valid_phone_number?(phone)
