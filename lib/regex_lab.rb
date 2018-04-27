@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  if word(/^[aeiou]/i)
+  if word =~ (/^[aeiou]/i)
     return true
   else
     return false
